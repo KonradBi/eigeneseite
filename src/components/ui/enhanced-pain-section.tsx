@@ -247,7 +247,7 @@ export const EnhancedPainSection: React.FC = () => {
         particle.life++
 
         const alpha = 1 - (particle.life / particle.maxLife)
-        const size = alpha * 3
+        const size = Math.max(0, alpha * 3) // Ensure size is never negative
 
         ctx.fillStyle = `rgba(239, 68, 68, ${alpha * 0.6})`
         ctx.beginPath()
