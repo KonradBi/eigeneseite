@@ -1,8 +1,7 @@
-
-
 import ContactButton from "@/components/ContactButton";
 import { RevolutionHero } from '@/components/ui/revolution-hero';
 import { HolographicCardsSection } from '@/components/ui/holographic-card';
+import { EnhancedPainSection } from '@/components/ui/enhanced-pain-section';
 
 export default function Home() {
   return (
@@ -15,31 +14,11 @@ export default function Home() {
         secondaryButtonText="Learn More"
       />
 
-
-            <div className="relative z-10 bg-black">
+      <div className="relative z-10 bg-black">
         <HolographicCardsSection />
 
-        {/* Pain Section */}
-        <section className="py-20 lg:py-32 bg-black text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tighter max-w-3xl mx-auto">Schluss mit Raten. Schluss mit Zweifeln.</h2>
-            <p className="text-lg md:text-xl text-slate-400 mt-4 max-w-2xl mx-auto">Sie verlassen Meetings und fragen sich, was wirklich gesagt wurde. Sie verlieren Deals, weil Sie die wahren Motive Ihres Gegenübers nicht kannten. Das kostet Sie mehr als nur Geld. Es kostet Sie Kontrolle.</p>
-            <div className="grid md:grid-cols-3 gap-8 mt-12 max-w-5xl mx-auto">
-              <div className="bg-slate-900 p-6 rounded-lg border border-slate-800">
-                <h3 className="font-bold text-xl mb-2">Verpasste Chancen</h3>
-                <p className="text-slate-400">Die Frustration, eine Verhandlung zu verlieren, die Sie hätten gewinnen müssen.</p>
-              </div>
-              <div className="bg-slate-900 p-6 rounded-lg border border-slate-800">
-                <h3 className="font-bold text-xl mb-2">Fehlende Sicherheit</h3>
-                <p className="text-slate-400">Das Gefühl, belogen zu werden, ohne es beweisen zu können.</p>
-              </div>
-              <div className="bg-slate-900 p-6 rounded-lg border border-slate-800">
-                <h3 className="font-bold text-xl mb-2">Falsche Partner</h3>
-                <p className="text-slate-400">Die Unsicherheit, ob ein potenzieller Partner oder Mitarbeiter wirklich hält, was er verspricht.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Enhanced Pain Section */}
+        <EnhancedPainSection />
 
         {/* Value Stack Section */}
         <section className="py-20 lg:py-32 bg-slate-900 text-white">
